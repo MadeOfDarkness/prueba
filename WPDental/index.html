@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.jquery.com/jquery-latest.js"></script>
+	<script src="irArriba.js"></script>
+	<title>White & Pink Dental</title>
+	<!-- LINK CSS -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/Doctores.css">
+	<link rel = "stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+	<!-- LINK ICONOS-->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+	
+	<header class="hero">
+		<!-- MENU NAVEGACIÓN -->
+		<nav class="nav-hero">
+			<div class="contenedor nav-contenedor">
+				<div class="logo">
+					<h2 class="logo-name">White & Pink Dental<span class="point">.</span></h2>
+				</div>
+				<div class="links">
+					<a class="colorear">Inicio</a>
+					<a href="servicios.html" class="link">Servicios</a>
+					<a href="pagina-principal-blog.html" class="link">Blog</a>
+					<a href="personal.html" class="link">Personal</a>
+					<a href="ubicacion.html" class="link link-active">Dónde estamos</a>
+				</div>
+			</div>
+		</nav>
+
+		<section class="contenedor hero-main">
+			<div class="hero-textos">
+				<h1 class="titulo">La mejor <span class="titulo-active">Clinica Dental.</span></h1>
+				<p class="copy">La mejor opción para invertir en tu salud dental.</p>
+				<a href="agendar-cita.php" class="cta">Agendar cita</a>
+			</div>
+			<img src="img/dentista.png" class="mockup">
+		</section>
+	</header>
+	<!-- SECTION MAIN -->
+	<main>
+		<!-- SECTION OFERTAS -->
+		<section class="ofertas">
+			<div class="contenedor">
+				<h2 class="subtitulo">Nuestas ofertas<span class="point">.</span> </h2>
+				<p class="copy-section">Checa nuestras ofertas especiales que preparamos para ti.</p>
+
+				<article class="contenedor-card">
+					<!-- ------ -->
+					<div class="Galeria-Fotografica">
+						<div class="item">
+							<img src="img/promo1.jpg" class="item-img">
+						<div class="item-text">
+							<h3>Blanqueamiento Dental</h3>
+							<p>De <span style="text-decoration: 3px line-through red;">$3,250.00</span> a $1,500.00</p>
+						</div>
+					</div>
+				<div class="item">
+					<img src="img/promo2.jpg" class="item-img">
+				<div class="item-text">
+					<h3>Limpieza Dental</h3>
+					<p>2 x $700.00</p>
+				</div>
+				</div>
+				<div class="item">
+					<img src="img/promo3.jpg" class="item-img">
+				<div class="item-text">
+					<h3>Resinas Dentales</h3>
+					<p>$550.00</p>
+				</div>
+				</div>
+			</div>
+
+				</article>
+			</div>
+		</section>
+		<!-- SECTION NUESTRO BLOG -->
+		<section class="temas-blog contenedor">
+			<h2 class="subtitulo">Nuestro blog<span class="point">.</span> </h2>
+			<p class="copy-section">Explora nuestras diversas publicaciones y aprende más sobre tus dientes.</p>
+			<article class="contenedor-bg">
+				<!-- ---------- -->
+				<div class="card">
+						<div class="cards-text">
+							<h3 class="card-titulo"> · Caries<span class="point">.</span></h3>
+							<p class="card-date">17 de Noviembre 2021</p>
+							<p class="card-copy">Las caries son zonas dañadas de forma permanente en la superficie de los dientes que se convierten en pequeñas aberturas u orificios. Las caries se producen a causa de una combinación de factores, como bacterias en la boca, ingesta frecuente de tentempiés, bebidas azucaradas y limpieza dental deficiente... </p>
+							<a href="caries.html" class="card-btn">Leer más</a>
+						</div>
+					</div>
+					<div class="background">
+						<img src="data:image/jpeg;base64,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" class="background-img">
+						<div class="background-text">
+							<h3 class="background-titulo">Revisión de caries</h3>							
+						</div>
+					</div>
+					<!-- ---------- -->
+					<div class="card">
+						<div class="cards-text">
+							<h3 class="card-titulo"> · Úlceras<span class="point">.</span></h3>
+							<p class="card-date">17 de Noviembre 2021</p>
+							<p class="card-copy">Aunque en su mayoría son inofensivas, las úlceras bucales pueden ser extremadamente incómodas y hacer que comer, beber y lavarse los dientes se dificulte... </p>
+							<a href="ulceras.html" class="card-btn">Leer más</a>
+						</div>
+					</div>
+					<div class="background">
+						<img src="https://www.propdental.es/wp-content/uploads/2016/02/Que-es-una-afta-bucal.jpg" class="background-img">
+						<div class="background-text">
+							<h3 class="background-titulo">Problema de úlcera en el labio</h3>
+						</div>
+					</div>
+					<!-- ---------- -->
+					<div class="card">
+						<div class="cards-text">
+							<h3 class="card-titulo"> · Dientes chuecos<span class="point">.</span></h3>
+							<p class="card-date">17 de Noviembre 2021</p>
+							<p class="card-copy">Los dientes chuecos son los dientes que erupcionan torcidos, girados o inclinados, y que por tanto provocan una maloclusión dental. Existen varias razones por las que los dientes pueden crecer torcidos... </p>
+							<a href="dientes-chuecos.html" class="card-btn">Leer más</a>
+						</div>
+					</div>
+					<div class="background">
+						<img src="https://images.pexels.com/photos/6502544/pexels-photo-6502544.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="background-img">
+						<div class="background-text">
+							<h3 class="background-titulo">Consulta previa a tratamiento de brackets</h3>
+						</div>
+					</div>
+					<a href="pagina-principal-blog.html" class="card-btn">Visitar Blog</a>
+			</article>
+		</section>
+		<!-- SECTION NUESTROS CLIENTES -->
+		<section class="testimonio">
+			<div class="contenedor">
+				<h2 class="subtitulo">Clientes satisfechos<span class="point">.</span> </h2>
+				<p class="copy-section">Cada día mas personas confian en nosotros para su salud dental.</p>
+				<!-- -------------------------- -->
+				<div class="contenedor-testimonio">
+					<div class="testimonio-card">
+						<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Flia.araugo%2Fposts%2F10160114274282788&show_text=true&width=350" width="350" height="186" style="border: #F23078 3px solid;overflow:hidden;margin-bottom: 80px;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+					</div>
+					</div>
+					
+				
+				<!-- -------------------------- -->
+				<div class="testimonio-card">
+					<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Faaron.aguirreperez.1%2Fposts%2F2693937107492125&show_text=true&width=350" width="350" height="186" style="border:#F23078 3px solid;overflow:hidden;margin-bottom: 80px;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+				</div>
+				<!-- -------------------------- -->
+				<div class="testimonio-card">
+					<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D2020195858040229%26id%3D100001495041245&show_text=true&width=350" width="350" height="186" style="border:#F23078 3px solid;overflow:hidden;margin-bottom: 80px;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- SECTION EMAIL DEL CLIENTE-->
+		<span class="ir-arriba icon-arrow-up2">↑</span>
+	</main>
+	<footer class="bg-dark py-5">
+        <div class="container">
+            <div class="row text-white g-4">
+                <div class="col-md-6 col-lg-3">
+                    <a class="text-uppercase text-decoration-none brand text-white" href="index.php">White & Pink Dental &copy;</a>
+                    <p class="text-white text-muted mt-3">La mejor opción para invertir en tu salud dental.</p>
+                    <img src="img/logotemp.png" style="width: auto; height: 125px;" class="iconoFooter">
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light">Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="my-3">
+                            <a href="index.html" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i>Inicio
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="servicios.html" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i>Servicios
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="pagina-principal-blog.html" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i>Blog
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="personal.html" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i>Personal
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light mb-3">Encuéntranos</h5>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class="me-3">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </span>
+                        <span class="fw-light">
+                            <a href="https://www.google.com/maps/dir/20.6840134,-105.2077802/20.6543903,-105.2254639/@20.672498,-105.2338262,14z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0" target="_blank" class="fw-light" style="color: #666f77;">Avenida Grandes Lagos 303 Local 28 48312 Puerto Vallarta, Jalisco, México</a>
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class="me-3">
+                            <i class="fas fa-clock"></i>
+                        </span>
+                        <span class="fw-light">
+                          °Lunes a Viernes - 9:00 a.m. a 2:00 p.m. | 4:00 p.m. a 8:00 p.m. <br>°Sábado - 9:00 a.m. a 2:00 p.m. <br>°Domingo - Cerrado
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class="me-3">
+                            <i class="fas fa-phone-alt"></i>
+                        </span>
+                        <span class="fw-light">
+                            <a href="tel:322 224 1758" class="fw-light" style="color: #666f77;">322 224 1758</a>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light mb-3">Síguenos</h5>
+                    <div>
+                        <ul class="list-unstyled d-flex">
+                            <li>
+                                <a href="https://www.facebook.com/dentalwhitelinepv" class="text-white text-decoration-none text-muted fs-4 me-4" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/whiteandpink.dental/" class="text-white text-decoration-none text-muted fs-4 me-4" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://api.whatsapp.com/send?phone=523221170846&app=facebook&entry_point=page_cta&fbclid=IwAR3g7ltELvHFM8mWuMfHv2ARQQubeVLJ3vAIaVBJR_Aokg13GlOAeb_b2Xw" class="text-white text-decoration-none text-muted fs-4 me-4" target="_blank">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Isotope js-->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- Bootstrap js -->
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+		<!-- Jquery -->
+    <script src="js/jquery-3.6.0.js"></script>
+		<!-- custom js -->
+    <script src="js/script.js"></script>
+</body>
+</html>

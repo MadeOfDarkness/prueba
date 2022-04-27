@@ -1,0 +1,156 @@
+
+/* GALERIA DEL PERSONAL  */
+.Galeria-Fotografica{
+	width: 90%;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3em;
+	margin-bottom: 3em;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-gap: 30px;
+}
+
+.item{
+	cursor: pointer;
+	box-shadow: 0 0 5px 0 rgba(254, 85, 135, 1.095);
+	transition: all 100ms;
+	position: relative;
+}
+
+.item:after{
+	content:"";
+	background-color: rgba(379, 429, 252, .1);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: scale(0);
+	transition: all 100ms;
+	opacity: 0;
+}
+
+.item:hover:after{
+	opacity: 1;
+	transform: scale(1);
+}
+
+.item:hover{
+	transform: scale(1);
+}
+
+.item-text{
+	background-color:#46404D;
+	padding: 1em;
+}
+
+.item-text h3{
+	color: #FE5587;
+}
+.item-text p{
+	color: #fff;
+}
+.item-img{
+	max-width: 100%;
+	display: block;
+}
+.nuestro-personal{
+	background: #46404D;
+}
+
+/* SECCIÓN NUESTRO TRAYECTO  */
+.timeline-section{
+	min-height: 100vh;
+	padding: 100px 15px;
+}
+.timeline-items{
+	max-width: 1000px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+.timeline-items::before{
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	background-color: #46404D;
+	left: calc(50% - 1px);
+}
+.timeline-item{
+	margin-bottom: 40px;
+	width: 100%;
+	position: relative;
+}
+.timeline-item:last-child{
+	margin-bottom: 0;
+}
+.timeline-item:nth-child(odd){
+	padding-right: calc(50% + 30px);
+	text-align: right;
+}
+.timeline-item:nth-child(even){
+	padding-left: calc(50% + 30px);
+}
+.timeline-dot{
+	height: 16px;
+	width: 16px;
+	background-color: #FE5587;
+	position: absolute;
+	left: calc(50% - 8px);
+	border-radius: 50%;
+	top: 10px;
+}
+.timeline-date{
+	font-size: 18px;
+	color: #FE5587;
+	margin: 6px 0 15px;
+}
+.timeline-contenido{
+	background-color: #FECBE1;
+	padding: 30px;
+	border-radius: 5px;
+}
+.timeline-contenido h3{
+	font-size: 20px;
+	margin: 0 0 10px;
+	font-weight: 400;
+}
+.timeline-contenido p{
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 22px;
+}
+
+/* SECCIÓN CSS RESPONSIVO  */
+@media screen and (min-width: 590px){
+	.Galeria-Fotografica {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media screen and (min-width: 960px){
+	.Galeria-Fotografica {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+/* SECCIÓN CSS TIMELINE  */
+@media screen and (max-width: 767px){
+
+	.timeline-items::before{
+		left: 7px;
+	}
+	.timeline-item:nth-child(odd){
+		padding-right: 0;
+		text-align: left;
+	}
+	.timeline-item:nth-child(odd),
+	.timeline-item:nth-child(even){
+		padding-left: 37px;
+	}
+	.timeline-dot{
+		left: 0;
+	}
+}

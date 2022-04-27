@@ -1,0 +1,133 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.hero-blog-index{
+	width: 100%;
+	height: auto;
+	background-image: url(../img/Banner.png);
+	background-size: cover;
+	
+}
+.hero-blog{
+	width: 100%;
+	height: auto;
+	background-image: url(../img/BlogBanner.png);
+	background-size: cover;
+	background-position: center;
+}
+.menu-blog{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	align-items: center;
+	text-align: center;
+}
+.hero-textos{
+	height: 440px;
+}
+.mockup-blog-index{
+	width: 80%;
+	object-fit: cover;
+	height: 300px;
+	border-radius: 35px;
+}
+/* TEMAS BLOG GENERAL */
+.contenido-post{
+	display: inline-block;
+	width: 70%;
+	padding: 10px;
+}
+.contenido-post .titulo-blog img{
+	width: 100%;
+	height: 400px;
+	border-top: 1px solid #FE5587;
+	padding-top: 10px;
+	margin-bottom: 10px;
+}
+.titulo-blog h1{
+	font-size: 48px;
+	line-height: 1.5em;
+}
+.titulo-blog h3{
+	color: #FE5587;
+	font-size: 16px;
+}
+.titulo-blog p{
+	display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+	font-size: 18px;
+}
+
+
+.info-post-blog img{
+	object-fit: cover;
+	width: 100%;
+	height: 400px;
+}
+
+/* TEMARIO */
+.temario-blog{
+	display: inline-block;
+	float: right;
+	width: 27%;
+	height: 500px;
+
+	text-align: left;
+}
+.temario{
+	padding-left: 40px;
+}
+.temario-link{
+	
+	line-height: 2em;
+	text-decoration: none;
+	color: #FE5587;
+}
+.card-autor-blog{
+	margin-top: 20px;
+	width: 30%;
+	padding: 20px;
+	overflow: hidden;
+	background:white;
+	border-radius: 10px;
+	position: relative;
+	margin-bottom: 60px;
+	box-shadow: 0 0 6px #3F3038;
+	width: 99%;
+}
+.linea-card-autor{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 50%;
+	height: 3px;
+	background: #FE5587;
+}
+.card-autor-blog h1{
+	line-height: 1.5em;
+}
+
+/* SECCIÓN RESPONSIVE */
+@media screen and (max-width: 900px){
+	.temario-blog{
+		display: none;
+	}
+	.contenido-post{
+	width: 100%;
+	}
+}
+
+@media screen and (max-width: 500px){
+	.contenido-post .titulo-blog img{
+	height: 250px;
+	}
+	.info-post-blog img{
+	height: 250px;
+	}
+  	.hero-blog{
+  		background-image: url(../img/banner-425.png);
+  	}
+  }
